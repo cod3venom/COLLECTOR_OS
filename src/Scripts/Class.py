@@ -4,6 +4,7 @@ import datetime
 timeNow = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 header_template: str = """ 
 #pragma once
+
 /*
 *	AUTHOR: Levan Ostrowski
 *   GIT: cod3venom

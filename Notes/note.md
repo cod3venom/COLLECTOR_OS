@@ -1,0 +1,3 @@
+EXECUTABLE DIR
+    -> boot
+        -> config

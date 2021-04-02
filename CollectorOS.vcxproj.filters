@@ -52,6 +52,9 @@
     <Filter Include="Source Files\Kernel\GUI">
       <UniqueIdentifier>{b6c7e0f8-afc1-44ae-ab8b-09eb4602a1b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Kernel\DataTypes">
+      <UniqueIdentifier>{245dc352-ff22-4de4-95dd-12c772300894}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\collectoros.cpp">
@@ -89,6 +92,15 @@
     </ClCompile>
     <ClCompile Include="src\Kernel\Config\Constants.cpp">
       <Filter>Source Files\Kernel\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Config\Logger.cpp">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\DataTypes\StringBuilder.cpp">
+      <Filter>Source Files\Kernel\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Boot\LocalConfig.cpp">
+      <Filter>Source Files\Kernel\Boot</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +144,30 @@
     </ClInclude>
     <ClInclude Include="src\Kernel\Config\Constants.h">
       <Filter>Source Files\Kernel\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\WIFI\pt80BtManager.h">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\WIFI\pt80ConfigData.h">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\WIFI\pt80DeviceOpt.h">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\WIFI\pt80SystemSet.h">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\WIFI\pt80WifiManager.h">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Config\Logger.h">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\DataTypes\StringBuilder.h">
+      <Filter>Source Files\Kernel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Boot\LocalConfig.h">
+      <Filter>Source Files\Kernel\Boot</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -9,11 +9,13 @@
 #ifndef __BOOTLOADER_H__
 #include <iostream>
 #include <map>
+#include "LocalConfig.h"
 #include "../Config/Context.h"
 #include "../GUI/MainMenu.h"
 class BootLoader
 {
 	private:
+		LocalConfig* localConfig;
 		CNeatWnd* mainWindow;
 		Context* ctx = new Context();
 		MainMenu* mainMenu;
@@ -21,7 +23,7 @@ class BootLoader
 	public:
 		BootLoader(CNeatWnd* mainWindow);
 		~BootLoader();
-
+		bool readLocalConfig();
 		void Load();
 };
 

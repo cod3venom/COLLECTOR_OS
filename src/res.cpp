@@ -1,5 +1,5 @@
 // dlgres.cpp : 资源文件
-// auto gen by NEAR Resource Tool, 04/02/21 03:10:10
+// auto gen by NEAR Resource Tool, 04/02/21 13:41:06
 //
 #include <neatctrl.h>
 #include <neatrc.h>

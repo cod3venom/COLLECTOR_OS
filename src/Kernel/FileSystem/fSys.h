@@ -6,17 +6,23 @@
 */
 
 #pragma once
-#ifndef FSYS_H
+#ifndef __FSYS_H__
 #include <iostream>
- 
-
+#include <fstream>
+#include <string>
 class fSys
 {
 	private:
 	public:
 		fSys();
 		~fSys();
+		bool isFile(std::string filePath);
+		bool isDir(std::string dirPath);
+		bool mkDir(std::string dirPath);
+		std::string readFile(std::string fileName);
+		bool writeFile(std::string filename, std::string input, bool append = false);
+
 };
 
-#endif // FSYS_H
+#endif // __FSYS_H__
 

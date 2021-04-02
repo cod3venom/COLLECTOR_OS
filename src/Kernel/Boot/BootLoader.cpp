@@ -6,6 +6,7 @@
 BootLoader::BootLoader(CNeatWnd* mainWindow)
 {
 	this->mainMenu = new MainMenu(this->ctx, mainWindow);
+	this->localConfig = new LocalConfig(this->ctx);
 	this->ctx->setMainMenu(this->mainMenu);
 }
 
@@ -13,11 +14,17 @@ BootLoader::~BootLoader()
 {
 
 }
-
+bool BootLoader::readLocalConfig()
+{
+	bool flag = this->localConfig->readConfig();
+	return flag;
+}
 void BootLoader::Load()
 {
+	this->readLocalConfig();
 	this->InitializeMainMenu();
 }
+
 bool BootLoader::InitializeMainMenu()
 {
 	std::map<std::string, int> menuItems;
