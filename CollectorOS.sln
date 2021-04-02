@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "collectoros", "CollectorOS.vcxproj", "{7E142A1B-59A7-4E29-AABB-185DB535D741}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		WIN32|x86 = WIN32|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E142A1B-59A7-4E29-AABB-185DB535D741}.WIN32|x86.ActiveCfg = WIN32|Win32
+		{7E142A1B-59A7-4E29-AABB-185DB535D741}.WIN32|x86.Build.0 = WIN32|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {865DF792-0077-45EA-82B4-887CA5CE826F}
+	EndGlobalSection
+EndGlobal

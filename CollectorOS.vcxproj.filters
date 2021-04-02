@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{33fb1ba5-dc8e-4c48-9ab6-5321e9d7ce7c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d530d280-f091-48c5-9cbe-eeeb690638c3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0b807bb7-2a58-469f-ba8a-56c6b0b401df}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Kernel">
+      <UniqueIdentifier>{7cd46e38-321f-484a-b547-3398093b36d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DAO">
+      <UniqueIdentifier>{ce098779-0558-467a-b01b-7ead9ffc3c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scripts">
+      <UniqueIdentifier>{149b6475-2485-4346-ae19-b791231066cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Actions">
+      <UniqueIdentifier>{107487df-caa2-415f-9982-938bc2ffe5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Boot">
+      <UniqueIdentifier>{e7d74235-c33c-42a9-acc4-cc55de5f8c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Filesystem">
+      <UniqueIdentifier>{10864589-e696-438b-93f6-26b9a13d69fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Config">
+      <UniqueIdentifier>{1b974b35-f358-4585-a45f-2741fb90b9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Features">
+      <UniqueIdentifier>{b04cd6ac-630a-43f4-9e39-7ea8030006a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Features\WIFI">
+      <UniqueIdentifier>{5f6e359c-d0d5-4618-96bc-da8f48c87dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Features\Network">
+      <UniqueIdentifier>{08104b7b-05b3-4146-a913-b6ab41609b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Features\Network\TCP">
+      <UniqueIdentifier>{54ca7e3f-ffca-4abc-aff3-d26e4a6af59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\Features\Network\HTTP">
+      <UniqueIdentifier>{49f2e362-0768-4ed0-81dd-5c846f492d3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel\GUI">
+      <UniqueIdentifier>{b6c7e0f8-afc1-44ae-ab8b-09eb4602a1b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\collectoros.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collectorosView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\res.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Config\Context.cpp">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Boot\BootLoader.cpp">
+      <Filter>Source Files\Kernel\Boot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\FileSystem\fSys.cpp">
+      <Filter>Source Files\Kernel\Filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Features\WIFI\Wifi.cpp">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Features\Network\TCP\TCPclient.cpp">
+      <Filter>Source Files\Kernel\Features\Network\TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Features\Network\HTTP\HTTPclient.cpp">
+      <Filter>Source Files\Kernel\Features\Network\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\GUI\MainMenu.cpp">
+      <Filter>Source Files\Kernel\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Config\KeyBoard.cpp">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kernel\Config\Constants.cpp">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\collectoros.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\collectoros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collectorosView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Config\Context.h">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Boot\BootLoader.h">
+      <Filter>Source Files\Kernel\Boot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\FileSystem\fSys.h">
+      <Filter>Source Files\Kernel\Filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\WIFI\Wifi.h">
+      <Filter>Source Files\Kernel\Features\WIFI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\Network\TCP\TCPclient.h">
+      <Filter>Source Files\Kernel\Features\Network\TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Features\Network\HTTP\HTTPclient.h">
+      <Filter>Source Files\Kernel\Features\Network\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\GUI\MainMenu.h">
+      <Filter>Source Files\Kernel\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Config\KeyBoard.h">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kernel\Config\Constants.h">
+      <Filter>Source Files\Kernel\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\res\icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Scripts\ActClass.py">
+      <Filter>Source Files\Scripts</Filter>
+    </None>
+    <None Include="src\Scripts\Class.py">
+      <Filter>Source Files\Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

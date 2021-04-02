@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN32|Win32">
+      <Configuration>WIN32</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>collectoros</ProjectName>
+    <ProjectGuid>{7E142A1B-59A7-4E29-AABB-185DB535D741}</ProjectGuid>
+    <RootNamespace>collectoros</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN32|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN32|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31025.104</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN32|Win32'">
+    <OutDir>./output/WIN32/\</OutDir>
+    <IntDir>./obj/WIN32/$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN32|Win32'">
+    <PreBuildEvent>
+      <Message>资源生成</Message>
+      <Command>"$(NEAT_HOME)\tools\neatrg.exe" "$(ProjectPath)" $(Configuration)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../output/lib/debug/collectoros.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(NEAT_HOME)/include/neat;$(NEAT_HOME)/include;$(NEAT_HOME);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__WXMSW__;WXUSINGDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>wxbase28.lib;neatsdk.lib;pt80_hal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./output/WIN32/$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(NEAT_HOME)/lib;$(NEAT_HOME)/pt80/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\collectoros.cpp" />
+    <ClCompile Include="src\collectorosView.cpp" />
+    <ClCompile Include="src\Kernel\Boot\BootLoader.cpp" />
+    <ClCompile Include="src\Kernel\Config\Constants.cpp" />
+    <ClCompile Include="src\Kernel\Config\Context.cpp" />
+    <ClCompile Include="src\Kernel\Config\KeyBoard.cpp" />
+    <ClCompile Include="src\Kernel\Features\Network\HTTP\HTTPclient.cpp" />
+    <ClCompile Include="src\Kernel\Features\Network\TCP\TCPclient.cpp" />
+    <ClCompile Include="src\Kernel\Features\WIFI\Wifi.cpp" />
+    <ClCompile Include="src\Kernel\FileSystem\fSys.cpp" />
+    <ClCompile Include="src\Kernel\GUI\MainMenu.cpp" />
+    <ClCompile Include="src\res.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\collectoros.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\collectoros.h" />
+    <ClInclude Include="src\collectorosView.h" />
+    <ClInclude Include="src\Kernel\Boot\BootLoader.h" />
+    <ClInclude Include="src\Kernel\Config\Constants.h" />
+    <ClInclude Include="src\Kernel\Config\Context.h" />
+    <ClInclude Include="src\Kernel\Config\KeyBoard.h" />
+    <ClInclude Include="src\Kernel\Features\Network\HTTP\HTTPclient.h" />
+    <ClInclude Include="src\Kernel\Features\Network\TCP\TCPclient.h" />
+    <ClInclude Include="src\Kernel\Features\WIFI\Wifi.h" />
+    <ClInclude Include="src\Kernel\FileSystem\fSys.h" />
+    <ClInclude Include="src\Kernel\GUI\MainMenu.h" />
+    <ClInclude Include="src\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\res\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Scripts\ActClass.py" />
+    <None Include="src\Scripts\Class.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
